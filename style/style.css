@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+nav {
+  background-color: rgb(254, 239, 174);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  color: rgb(124, 122, 122);
+  font-size: 18px;
+}
+nav li {
+  list-style-type: none;
+  margin: 35px;
+  padding: 2px;
+  border-bottom: 2px solid rgb(82, 79, 79);
+}
+nav li:hover {
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+#top {
+  background-color: rgb(254, 239, 174);
+}
+#top img {
+  margin-left: 15%;
+  width: 70%;
+  height: 350px;
+}
+
+.container-inicial {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+.container-inicial #sobre {
+  width: 30%;
+  text-align: justify;
+}
+.container-inicial #sobre p {
+  margin-top: 25px;
+}
+.container-inicial #sobre span {
+  color: rgb(254, 239, 174);
+}
+.container-inicial img {
+  height: 225px;
+  width: 250px;
+  padding-bottom: 15px;
+}
+
+#container-quote {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: rgb(253, 230, 129);
+}
+#container-quote blockquote {
+  font-size: 20px;
+}
+#container-quote blockquote .cite {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#acessar {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.acessos-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.acesso {
+  width: 200px;
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-size: medium;
+}
+.acesso table {
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.acesso table img {
+  width: 70%;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid rgb(92, 90, 90);
+}
+.acesso table button {
+  background-color: rgb(236, 160, 236);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 160, 236);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+.acesso table button:hover {
+  background-color: rgb(223, 142, 223);
+}
+
+.button-artigo {
+  display: flex;
+  justify-content: center;
+}
+.button-artigo button {
+  background-color: rgb(236, 160, 236);
+  color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(236, 160, 236);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 40px;
+}
+
+footer {
+  background-color: #f3bfdd;
+  color: #2b2b2b;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .footer-container .footer-section {
+  flex: 1 1 250px;
+  margin-bottom: 20px;
+  border-right: 2px solid gray;
+  padding: 10px;
+}
+footer .footer-container .footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+footer .footer-container .footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-container .footer-section ul li {
+  margin-bottom: 8px;
+}
+footer .footer-container .footer-section ul li a {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+footer .footer-container .footer-section ul li a:hover {
+  text-decoration: underline;
+}
+footer .footer-container .footer-section .social-icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 120px;
+}
+footer .footer-container .footer-section .social-icons li {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+footer .footer-container .footer-section .social-icons li a {
+  color: #333;
+}
+footer .footer-container .newsletter-section {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+footer .footer-container .newsletter-section form {
+  display: flex;
+}
+footer .footer-container .newsletter-section form input[type=email] {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+footer .footer-container .newsletter-section form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+footer .footer-container .more-content-section {
+  border: none;
+}
+footer .copy {
+  margin-top: 25px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
