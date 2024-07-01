@@ -1,6 +1,12 @@
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -8,34 +14,98 @@ body {
 }
 
 nav {
-  background-color: rgb(254, 239, 174);
+  background-color: white;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
-nav ul {
+nav .cimaNav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .cimaNav img {
+  width: 250px;
+  height: 190px;
+  margin-left: 10px;
+  padding-bottom: 15px;
+  position: relative;
+  bottom: 40px;
+}
+nav .cimaNav ul {
   display: flex;
   justify-content: center;
   color: rgb(124, 122, 122);
-  font-size: 18px;
+  margin-top: 20px;
+  margin-right: 35px;
+  margin-bottom: 45px;
+  font-size: 15px;
+  gap: 20px;
 }
-nav li {
+nav .cimaNav ul li {
   list-style-type: none;
-  margin: 35px;
-  padding: 2px;
-  border-bottom: 2px solid rgb(82, 79, 79);
 }
-nav li:hover {
-  font-size: 20px;
+nav .cimaNav ul li:hover {
   padding: 5px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 10px;
+  cursor: pointer;
+}
+nav .cimaNav ul li button {
+  width: 80px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+nav .baixoNav {
+  position: relative;
+  bottom: 120px;
+  right: 200px;
+}
+nav .baixoNav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style-type: none;
+}
+nav .baixoNav ul li {
+  position: relative;
+  bottom: 5px;
+  left: 150px;
+  padding-bottom: 5px;
+}
+nav .baixoNav ul li:hover {
+  border-bottom: 2px solid black;
+}
+nav .baixoNav ul li .abrirMenu {
+  display: flex;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  top: 105%;
+  left: 0;
+  margin-top: 25px;
+}
+nav .baixoNav ul li .abrirMenu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+nav .baixoNav ul li .abrirMenu a:hover {
+  background-color: #f1f1f1;
 }
 
 #top {
-  background-color: rgb(254, 239, 174);
+  position: relative;
+  top: 120px;
+  display: flex;
+  padding-bottom: 120px;
+  justify-content: center;
 }
 #top img {
-  margin-left: 15%;
-  width: 70%;
-  height: 350px;
+  width: 95%;
+  height: 450px;
 }
 
 .container-inicial {
@@ -47,31 +117,130 @@ nav li:hover {
   width: 30%;
   text-align: justify;
 }
+.container-inicial #sobre h1 {
+  font-weight: bold;
+  color: rgb(5, 43, 114);
+}
 .container-inicial #sobre p {
   margin-top: 25px;
 }
 .container-inicial #sobre span {
-  color: rgb(254, 239, 174);
+  color: rgb(5, 43, 114);
 }
 .container-inicial img {
-  height: 225px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
   padding-bottom: 15px;
+  border-radius: 90%;
+}
+
+.galeria {
+  background-color: #feffc9;
+  height: 650px;
+  padding: 45px 0 0 45px;
+}
+.galeria h3 {
+  text-align: center;
+}
+.galeria p {
+  text-align: center;
+}
+
+#galeriaCarousel {
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+#galeriaCarousel .carousel-item {
+  height: 450px;
+  width: 900px;
+}
+#galeriaCarousel .carousel-item img {
+  height: auto;
+}
+
+.banner-banner {
+  background-color: rgba(255, 234, 254, 0.6117647059);
+  height: 450px;
+  align-items: center;
+  margin: 40px;
+  padding-top: 40px;
+}
+.banner-banner .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.banner-banner .button button {
+  width: 270px;
+  height: 40px;
+  border-radius: 55px;
+}
+.banner-banner .servicoDescricao {
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.banner table {
+  background-color: white;
+  height: 190px;
+  width: 195px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.banner #center img {
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+.banner #centraliza img {
+  position: relative;
+  bottom: 5px;
+  left: 2px;
+}
+.banner #centraliza img p {
+  padding-bottom: 10px;
+}
+.banner .adocao {
+  width: 75%;
+  height: 410px;
+  padding: 40px;
+}
+.banner .servicos img, .banner .servicos2 img {
+  height: 125x;
+  width: 135px;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+.banner .servicos p, .banner .servicos2 p {
+  font-size: 15px;
+  color: rgb(8, 8, 122);
+  padding-left: 55px;
+  margin-top: 25px;
+  padding-bottom: 2px;
 }
 
 #container-quote {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 60px;
   width: 100%;
   height: auto;
   padding-top: 140px;
   padding-bottom: 140px;
-  background-color: rgb(253, 230, 129);
+  background-color: rgb(195, 231, 225);
 }
 #container-quote blockquote {
-  font-size: 20px;
+  font-size: 28px;
 }
 #container-quote blockquote .cite {
   margin-top: 10px;
@@ -81,43 +250,49 @@ nav li:hover {
 #acessar {
   text-align: center;
   margin-top: 55px;
+  margin-bottom: 45px;
 }
 
 .acessos-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 20px;
+  gap: 70px;
+}
+
+.tabela-centralize {
+  margin-top: 80px;
 }
 
 .acesso {
-  width: 200px;
+  width: 150px;
   text-align: center;
   font-family: "Noto Serif", serif;
   font-size: medium;
 }
 .acesso table {
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: white;
   margin-bottom: 20px;
-  border-radius: 50%;
   overflow: hidden;
+  margin: -10px 20px 5px -10px;
 }
 .acesso table img {
-  width: 70%;
+  width: 90%;
   height: 120px;
   border-radius: 50%;
   margin-bottom: 15px;
   border: 2px solid rgb(92, 90, 90);
 }
 .acesso table button {
-  background-color: rgb(236, 160, 236);
-  color: white;
+  background-color: rgb(135, 206, 228);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
   border: 1px solid rgb(236, 160, 236);
   padding: 8px 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 15px;
+  margin-top: 40px;
 }
 .acesso table button:hover {
   background-color: rgb(223, 142, 223);
@@ -139,8 +314,8 @@ nav li:hover {
 }
 
 footer {
-  background-color: #f3bfdd;
-  color: #2b2b2b;
+  background-color: #faf9d9;
+  color: #000000;
   padding: 40px 20px;
   font-size: 14px;
 }
@@ -167,7 +342,7 @@ footer .footer-container .footer-section ul li {
   margin-bottom: 8px;
 }
 footer .footer-container .footer-section ul li a {
-  color: #2b2b2b;
+  color: #000000;
   text-decoration: none;
 }
 footer .footer-container .footer-section ul li a:hover {
@@ -197,7 +372,7 @@ footer .footer-container .newsletter-section form {
   display: flex;
 }
 footer .footer-container .newsletter-section form input[type=email] {
-  width: 250px;
+  width: 300px;
   padding: 10px;
   border: none;
   border-radius: 4px 0 0 4px;
