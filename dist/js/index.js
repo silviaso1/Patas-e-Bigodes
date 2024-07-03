@@ -21,3 +21,22 @@ function menuNav() {
     });
 }
 menuNav();
+function mostrarSenha() {
+    const senha = document.getElementById('senha');
+    const mostrar = document.getElementById('mostrarSenha');
+    if (senha.type === 'password') {
+        senha.setAttribute('type', 'text');
+        mostrar.classList.replace('bi-eye', 'bi-eye-slash');
+    }
+    else {
+        senha.setAttribute('type', 'password');
+        mostrar.classList.replace('bi-eye-slash', 'bi-eye');
+    }
+}
+
+function esquecerSenha(){
+    const click = document.getElementById('esquecer')
+    window.alert("Enviaremos um código para seu email!");
+}
+
+

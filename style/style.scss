@@ -6,16 +6,27 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
     
 }
 body{
+
     height: 100vh;
-    
+
+    a {
+        color: inherit; 
+        text-decoration: none; 
+
+        &:visited{
+            text-decoration: none;
+        }
+    }
+
     
 }
 
 nav {
-    background-color: white;
+    background-color: white; 
     height: 100px;
     position: fixed;
     z-index: 1;
@@ -95,9 +106,9 @@ nav {
                     margin-top: 25px;
                     
                     
-                     
+                
                 }
-
+ 
                 .abrirMenu a {
                     color: black;
                     padding: 12px 16px;
@@ -115,16 +126,16 @@ nav {
     }
 }
 
-
-#top{
+.top{
     position: relative;
-    top: 120px;
+    top: 120px; 
     display: flex;
-    padding-bottom: 120px;
     justify-content: center;
-    img {
+    height: 450px;
+    
+    img {   
         width: 95%;
-        height: 450px;
+        height: auto;
     
     }
 }
@@ -133,32 +144,36 @@ nav {
 .container-inicial {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 90px;
+    margin-top: 90px; 
 
     #sobre {
         width: 30%;
-        text-align: justify;
+        flex-wrap: nowrap;
+        margin-top: 120px;
 
-        h1{
+        h1{  
             font-weight: bold;
-            color: $cor-principal;
+            color: $cor-principal; 
+            text-align: justify;
         }
-
+  
         p {
-            margin-top: 25px;
-        }
+            margin-top: 25px; 
+            text-align: justify;
+        }  
 
-        span {
-            color: $cor-principal;
+        span { 
+            color: $cor-principal; 
         }
     }
-    
+     
 
     img {
         height: 300px;
         width: $largura-imagem-acessar;
-        padding-bottom: 15px;
+        padding-bottom: 15px; 
         border-radius: 90%;
+        margin-top: 145px;
     }
 }
 
@@ -195,7 +210,7 @@ nav {
    
 }
 
-.banner-banner{
+.banner-banner{ 
     background-color: #ffeafe9c;
     height: 450px;
     align-items: center;
@@ -244,7 +259,7 @@ nav {
         img{
             position: relative;
             top: 2px;
-            left: 5px;
+            left: 5px; 
         }
     }
 
@@ -483,3 +498,76 @@ footer {
         text-align: center;
     }
 }
+
+.divFora {
+    background-color: #ffffff;
+    height: 100vh; 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Principal {
+    display: flex; 
+    background-color: rgb(192, 199, 241);
+    padding: 10%;
+    align-items: center;
+    border-radius: 45px;
+    gap: 80px; 
+
+    .parteLogin {
+        height: 400px;
+        width: 30%;
+        padding: 20px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 45px;
+        align-items: center;
+        margin-top: 110px;  
+        border: 1px solid black;
+
+        input {
+            width: 60%;
+            border-radius: 25px;
+            margin-top: 45px;
+        }
+
+        #senha {
+            margin-right: 15px;
+        }
+
+        a {
+            margin-top: 15px;
+        }
+
+        #esqueceu {
+            color: rgb(206, 41, 41);
+            border-bottom: 1px solid rgb(206, 41, 41);
+        }
+
+        button {
+            margin-top: 25px;
+            height: 40px;
+            width: 110px;
+        }
+
+        #centerUser {
+            margin-right: 20px;
+        }
+    }
+
+    .parteLado {
+        color: white;
+        font-weight: bolder;
+
+        img {
+            width: 550px;
+            height: 320px;
+            margin-bottom: -150px;
+        }
+    }
+}
+ 
+
+

@@ -1,16 +1,76 @@
 @media screen and (max-width: 768px) {
-  * {
+  nav {
     font-size: 10px;
   }
+  footer {
+    font-size: 10px;
+  }
+  .newsletter-section h3, form {
+    text-align: center;
+  }
+  #container-foto {
+    display: none;
+  }
+  #sobre {
+    width: 100%;
+    position: relative;
+    right: 10%;
+  }
+  #sobre p {
+    font-size: 80%;
+    text-align: justify;
+    width: 170%;
+    margin: 0;
+  }
+  .container-inicial {
+    justify-content: start;
+    width: 100%;
+    position: relative;
+    bottom: 60px;
+  }
+  #gatoTopo {
+    height: 210px;
+  }
+  .Principal {
+    flex-direction: column;
+    padding: 0%;
+    flex: 1;
+  }
+  .divFora {
+    width: 100%;
+  }
+  #aa {
+    width: 100%;
+  }
+  .parteLado {
+    display: none;
+  }
+  .parteLogin {
+    padding: 25px;
+    display: block;
+    margin-top: 0;
+  }
 }
+#lado {
+  width: 200%;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   height: 100vh;
+}
+body a {
+  color: inherit;
+  text-decoration: none;
+}
+body a:visited {
+  text-decoration: none;
 }
 
 nav {
@@ -96,16 +156,16 @@ nav .baixoNav ul li .abrirMenu a:hover {
   background-color: #f1f1f1;
 }
 
-#top {
+.top {
   position: relative;
   top: 120px;
   display: flex;
-  padding-bottom: 120px;
   justify-content: center;
-}
-#top img {
-  width: 95%;
   height: 450px;
+}
+.top img {
+  width: 95%;
+  height: auto;
 }
 
 .container-inicial {
@@ -115,14 +175,17 @@ nav .baixoNav ul li .abrirMenu a:hover {
 }
 .container-inicial #sobre {
   width: 30%;
-  text-align: justify;
+  flex-wrap: nowrap;
+  margin-top: 120px;
 }
 .container-inicial #sobre h1 {
   font-weight: bold;
   color: rgb(5, 43, 114);
+  text-align: justify;
 }
 .container-inicial #sobre p {
   margin-top: 25px;
+  text-align: justify;
 }
 .container-inicial #sobre span {
   color: rgb(5, 43, 114);
@@ -132,6 +195,7 @@ nav .baixoNav ul li .abrirMenu a:hover {
   width: 300px;
   padding-bottom: 15px;
   border-radius: 90%;
+  margin-top: 145px;
 }
 
 .galeria {
@@ -393,4 +457,65 @@ footer .footer-container .more-content-section {
 footer .copy {
   margin-top: 25px;
   text-align: center;
+}
+
+.divFora {
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.Principal {
+  display: flex;
+  background-color: rgb(192, 199, 241);
+  padding: 10%;
+  align-items: center;
+  border-radius: 45px;
+  gap: 80px;
+}
+.Principal .parteLogin {
+  height: 400px;
+  width: 30%;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 45px;
+  align-items: center;
+  margin-top: 110px;
+  border: 1px solid black;
+}
+.Principal .parteLogin input {
+  width: 60%;
+  border-radius: 25px;
+  margin-top: 45px;
+}
+.Principal .parteLogin #senha {
+  margin-right: 15px;
+}
+.Principal .parteLogin a {
+  margin-top: 15px;
+}
+.Principal .parteLogin #esqueceu {
+  color: rgb(206, 41, 41);
+  border-bottom: 1px solid rgb(206, 41, 41);
+}
+.Principal .parteLogin button {
+  margin-top: 25px;
+  height: 40px;
+  width: 110px;
+}
+.Principal .parteLogin #centerUser {
+  margin-right: 20px;
+}
+.Principal .parteLado {
+  color: white;
+  font-weight: bolder;
+}
+.Principal .parteLado img {
+  width: 550px;
+  height: 320px;
+  margin-bottom: -150px;
 }/*# sourceMappingURL=style.css.map */

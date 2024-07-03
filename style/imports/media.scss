@@ -1,7 +1,77 @@
 @media screen and (max-width: 768px) {
-    
-    *{
-        font-size: 10px;
+  
+    nav{
+      font-size: 10px;
     }
+  
     
+    footer{
+      font-size: 10px;
+    }
+    .newsletter-section h3, form{
+      text-align: center;
+    
+    }
+
+    #container-foto{
+        display: none;
+    }
+
+
+   
+    #sobre {
+
+       width: 100%;
+       position: relative;
+       right: 10%;
+
+        p{
+            font-size: 80%;
+            text-align:justify;
+            width: 170%;
+            margin: 0;
+        }
+    }
+   
+    .container-inicial{
+        justify-content: start;
+        width: 100%;
+        position: relative;
+        bottom: 60px;
+    }
+
+   #gatoTopo{
+    height: 210px;
+   }
+
+   .Principal {
+    flex-direction: column;
+    padding: 0%;
+    flex: 1;
+  }
+
+    .divFora{
+      width: 100%;
+    }
+
+    #aa{
+      width: 100%;
+    }
+
+    .parteLado {
+        display: none;
+    }
+
+    .parteLogin {
+        padding: 25px;
+        display: block;
+        margin-top: 0; 
+    }
 }
+
+#lado {
+    width: 200%;
+}
+    
+ 
+
