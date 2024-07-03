@@ -33,10 +33,6 @@ function mostrarSenha() {
         mostrar.classList.replace('bi-eye-slash', 'bi-eye');
     }
 }
-
-function esquecerSenha(){
-    const click = document.getElementById('esquecer')
+function esquecerSenha() {
     window.alert("Enviaremos um código para seu email!");
 }
-
-
