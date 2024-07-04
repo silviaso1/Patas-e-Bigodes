@@ -21,19 +21,17 @@
     <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
-<body>
-    <nav>
-        <div class="cimaNav">
+<body class="cadastroLogin">
+    <nav id="loginNav">
+        <div id="deixandoFlex">
             <div>
                 <a href="index.html">
                     <img src="./img/inicial/Slogan2.png" alt="">
                 </a>
             </div>
-            <div>
+            <div> 
                 <ul>
-                    <li>Artigos</li>
-                    <li>Produtos</li>
-                    <li><button id="mudar mudar2">
+                    <li><button id="mudar">
                         <a href="login.html">Log in</a>
                     </button></li>
                     <li><button>
@@ -41,67 +39,6 @@
                     </button></li>
                 </ul>
             </div>
-        </div>
-        <div class="baixoNav">
-            <ul>
-                <li>
-                    Animais para adoção
-                    <div class="abrirMenu">
-                        <a href="#">Artigo 1</a>
-                        <a href="#">Artigo 2</a>
-                        <a href="#">Artigo 3</a>
-                    </div>
-                </li>
-                <li>
-                    Consulta Veterinária
-                    <div class="abrirMenu">
-                        <a href="#">Artigo 1</a>
-                        <a href="#">Artigo 2</a>
-                        <a href="#">Artigo 3</a>
-                    </div>
-                </li>
-                <li>
-                    Banho e tosa
-                    <div class="abrirMenu">
-                        <a href="#">Artigo 1</a>
-                        <a href="#">Artigo 2</a>
-                        <a href="#">Artigo 3</a>
-                    </div>
-
-                </li>
-                <li>
-                    Vacinação
-                    <div class="abrirMenu">
-                        <a href="#">Artigo 1</a>
-                        <a href="#">Artigo 2</a>
-                        <a href="#">Artigo 3</a>
-                    </div>
-                </li>
-                <li>
-                    Orçamentos
-                    <div class="abrirMenu">
-                        <a href="#">Artigo 1</a>
-                        <a href="#">Artigo 2</a>
-                        <a href="#">Artigo 3</a>
-                    </div>
-                </li>
-                <li>
-                    Agendamentos
-                    <div class="abrirMenu">
-                        <a href="#">Artigo 1</a>
-                        <a href="#">Artigo 2</a>
-                        <a href="#">Artigo 3</a>
-                    </div>
-                </li>
-                <li>
-                    Meu Plano
-                    <div class="abrirMenu">
-                        <a href="#">Artigo 1</a>
-                        <a href="#">Artigo 2</a>
-                        <a href="#">Artigo 3</a>
-                    </div>
-                </li>
-            </ul>
         </div>
     </nav>
    
@@ -118,7 +55,7 @@
                 <input type="text" placeholder="Nome de usuário" id="centerUser">
                 <input type="password" placeholder="Senha" id="senha">
                 <i class="bi bi-eye" id="mostrarSenha" onclick="mostrarSenha()"></i>
-                <a href="index.html" onclick="esquecerSenha()" id="esqueceu">Esqueci a senha</a>
+                <a href="index.html" id="esqueceu">Esqueci a senha</a>
                 <a href="">Não tem uma conta? Cadastre-se</a>
                 <button type="button">
                     <a href="index.html" id="submeter">Entrar</a>

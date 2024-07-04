@@ -74,6 +74,30 @@ nav {
         }
     }
 
+    #deixandoFlex{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px 0px 15px;
+        img{
+            width: 200px;
+            margin-top: -20px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            margin-top: 40px;
+        }
+        li{
+            margin-left: 15px; 
+        }
+        button{
+            width: 80px;
+            border-radius: 25px;
+            background-color: #1b7ec0;
+            color: rgb(255, 255, 255);
+            margin-right: 10px; 
+        }
+    }
     .baixoNav {
         position: relative;
         bottom: 120px;
@@ -351,7 +375,7 @@ nav {
         margin-bottom: 20px;
         overflow: hidden;
         margin: -10px 20px 5px -10px;
-
+ 
         img {
             width: 90%;
             height: 120px;
@@ -415,8 +439,7 @@ footer {
         .footer-section {
             flex: 1 1 250px;
             margin-bottom: 20px;
-            border-right: 2px solid gray;
-            padding: 10px;
+            padding: 10px; 
 
             h3 {
                 font-size: 16px;
@@ -509,11 +532,13 @@ footer {
 
 .Principal {
     display: flex; 
-    background-color: rgb(192, 199, 241);
+    justify-content: center;
+    background-color: rgb(192, 199, 241);  
     padding: 10%;
     align-items: center;
     border-radius: 45px;
     gap: 80px; 
+   
 
     .parteLogin {
         height: 400px;
@@ -559,7 +584,7 @@ footer {
 
     .parteLado {
         color: white;
-        font-weight: bolder;
+        font-weight: bolder; 
 
         img {
             width: 550px;
@@ -568,6 +593,7 @@ footer {
         }
     }
 }
+
  
 
 

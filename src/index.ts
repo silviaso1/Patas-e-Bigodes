@@ -42,3 +42,4 @@ function mostrarSenha(){
     function esquecerSenha(){
         window.alert("Enviaremos um código para seu email!");
     }
+    esquecerSenha();

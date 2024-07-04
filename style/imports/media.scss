@@ -7,6 +7,7 @@
     
     footer{
       font-size: 10px;
+      }
     }
     .newsletter-section h3, form{
       text-align: center;
@@ -21,13 +22,13 @@
    
     #sobre {
 
-       width: 100%;
+       width: 40% !important;
        position: relative;
        right: 10%;
+       text-align: start !important;
 
         p{
             font-size: 80%;
-            text-align:justify;
             width: 170%;
             margin: 0;
         }
@@ -42,6 +43,28 @@
 
    #gatoTopo{
     height: 210px;
+   }
+
+   #container-quote{
+
+    padding: 20px;
+      blockquote{
+        width: auto !important;
+        text-align: center !important;
+        font-size: 20px!important;
+      }
+   }
+
+   .acessos-container{
+    flex-wrap: wrap;
+     table{
+      width: 100%;
+      margin-left:0 !important;
+      img{
+        height: 80px; 
+        width: 80%;
+      }
+     }
    }
 
    .Principal {
@@ -59,15 +82,15 @@
     }
 
     .parteLado {
-        display: none;
+        display: none ;
     }
 
     .parteLogin {
         padding: 25px;
-        display: block;
+        width: 80% !important;
         margin-top: 0; 
     }
-}
+
 
 #lado {
     width: 200%;

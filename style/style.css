@@ -5,52 +5,83 @@
   footer {
     font-size: 10px;
   }
-  .newsletter-section h3, form {
-    text-align: center;
-  }
-  #container-foto {
-    display: none;
-  }
-  #sobre {
-    width: 100%;
-    position: relative;
-    right: 10%;
-  }
-  #sobre p {
-    font-size: 80%;
-    text-align: justify;
-    width: 170%;
-    margin: 0;
-  }
-  .container-inicial {
-    justify-content: start;
-    width: 100%;
-    position: relative;
-    bottom: 60px;
-  }
-  #gatoTopo {
-    height: 210px;
-  }
-  .Principal {
-    flex-direction: column;
-    padding: 0%;
-    flex: 1;
-  }
-  .divFora {
-    width: 100%;
-  }
-  #aa {
-    width: 100%;
-  }
-  .parteLado {
-    display: none;
-  }
-  .parteLogin {
-    padding: 25px;
-    display: block;
-    margin-top: 0;
-  }
 }
+.newsletter-section h3, form {
+  text-align: center;
+}
+
+#container-foto {
+  display: none;
+}
+
+#sobre {
+  width: 40% !important;
+  position: relative;
+  right: 10%;
+  text-align: start !important;
+}
+#sobre p {
+  font-size: 80%;
+  width: 170%;
+  margin: 0;
+}
+
+.container-inicial {
+  justify-content: start;
+  width: 100%;
+  position: relative;
+  bottom: 60px;
+}
+
+#gatoTopo {
+  height: 210px;
+}
+
+#container-quote {
+  padding: 20px;
+}
+#container-quote blockquote {
+  width: auto !important;
+  text-align: center !important;
+  font-size: 20px !important;
+}
+
+.acessos-container {
+  flex-wrap: wrap;
+}
+.acessos-container table {
+  width: 100%;
+  margin-left: 0 !important;
+}
+.acessos-container table img {
+  height: 80px;
+  width: 80%;
+}
+
+.Principal {
+  flex-direction: column;
+  padding: 0%;
+  flex: 1;
+}
+
+.divFora {
+  width: 100%;
+}
+
+#aa {
+  width: 100%;
+}
+
+.parteLado {
+  display: none;
+}
+
+.parteLogin {
+  padding: 25px;
+  width: 80% !important;
+  margin-top: 0;
+}
+
 #lado {
   width: 200%;
 }
@@ -115,6 +146,30 @@ nav .cimaNav ul li button {
   border-radius: 25px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+}
+nav #deixandoFlex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 15px;
+}
+nav #deixandoFlex img {
+  width: 200px;
+  margin-top: -20px;
+}
+nav #deixandoFlex ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 40px;
+}
+nav #deixandoFlex li {
+  margin-left: 15px;
+}
+nav #deixandoFlex button {
+  width: 80px;
+  border-radius: 25px;
+  background-color: #1b7ec0;
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
 }
 nav .baixoNav {
   position: relative;
@@ -391,7 +446,6 @@ footer .footer-container {
 footer .footer-container .footer-section {
   flex: 1 1 250px;
   margin-bottom: 20px;
-  border-right: 2px solid gray;
   padding: 10px;
 }
 footer .footer-container .footer-section h3 {
@@ -469,6 +523,7 @@ footer .copy {
 
 .Principal {
   display: flex;
+  justify-content: center;
   background-color: rgb(192, 199, 241);
   padding: 10%;
   align-items: center;
